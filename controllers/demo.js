@@ -35,7 +35,7 @@ const getAnio = (req = request, res = response) => {
     const {id} = req.params;
     console.log(id);
         
-        axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${api}&year={id}`)
+        axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${api}&primary_release_year={id}`)
         
         .then(( {status, data, statusText}) => {
             // handle success
