@@ -21,6 +21,8 @@ class Server{
     routers(){
     
         this.app.use('/primerapi', require('../routes/demo'));
+
+        
     }
 
     listen(){
